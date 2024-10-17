@@ -2,12 +2,16 @@
 
 import sys
 
-ans = 0
 
-for line in sys.stdin:
+def tonum(s):
     try:
-        ans += int(line)
+        return int(line)
     except:
-        ans += float(line)
+        return float(line)
+
+
+ans = 0
+for line in sys.stdin:
+        ans += tonum(line)
 
 print(ans)
