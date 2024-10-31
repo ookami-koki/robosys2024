@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/bash -xv 
+# SPDX-FileCopyrightText: 2024 Koki Iwai
+# SPDX-License-Identifier: BSD-3-Clause
 
 ng () {
 	echo ${1}行目がおかしいよ
@@ -6,6 +8,16 @@ ng () {
 }
 
 res=0
+
+### STRANGE INPUT ###
+out=$(echo ア | ./plus)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+### SPACE INPUT ###
+out=$(echo | ./plus)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
 
 out=$(seq 5 | ./plus)
 [ "${out}" = 15 ] || ng "$LINENO"
