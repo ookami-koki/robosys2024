@@ -33,6 +33,19 @@ $ cat yoko_numbers | tr ' ' '\n' | ./plus
 ただし、数字ごとに空白が必要(ex:1 2 3 4 5)
 
 
+## ksコマンド
+
+lsと間違えてksと打ったときにターミナルに怒ってもらう。
+
+### 使用方法
+
+```
+PATH=$PATH:<今いるディレクトリ名>/ks
+```
+
+でpathを通す。これをしないとksを間違えて打っても怒ってくれない。
+シェルを終了するとPATHに追加した文字列(今回は　$PATH:<今いるディレクトリ名>/ks)は消える。
+
 ## 必要なソフトウェア
 -Python
  -テスト済みバージョン: 3.7~3.11
@@ -44,4 +57,6 @@ $ cat yoko_numbers | tr ' ' '\n' | ./plus
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです.
     - (https://ryuichiueda.github.io/slides_marp/robosys2024/lesson3.html)
+    - (https://ryuichiueda.github.io/slides_marp/robosys2024/lesson2.html)
+
 - © 2024 Koki Iwai
