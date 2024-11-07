@@ -34,6 +34,7 @@ $ cat yoko_numbers | tr ' ' '\n' | ./plus
 
 
 ## ksコマンド
+[![test](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml)
 
 lsと間違えてksと打ったときにターミナルに怒ってもらう。
 
