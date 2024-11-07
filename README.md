@@ -2,7 +2,7 @@
 授業用
 
 # plusコマンド
-![test](https://github.com/ookami-koki/robosys2024/.github/workflows/test.yml/badge.svg)
+[![test](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml)
 
 ## 必要なソフトウェア
 -Python
