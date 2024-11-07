@@ -1,10 +1,29 @@
 # robosys2024
-
-[![test](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml)
-
 授業用
 授業内で使用したコードの保存をおこなう。
 
+## plusコマンド
+[![test](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml)
+
+入力された数字を足し算して表示する。
+
+### 使用方法
+$ seq 5 ./plus
+15
+
+上記のようにseqコマンドで出力した数列を計算可能
+
+$ ./plus numbers
+15
+
+上記のように数列の含まれるファイルの計算も可能
+ただし、読み込ませるファイルの中身は数字ごとに改行する必要がある。(ex:numbersを参照)
+
+$ cat yoko_numbers | tr ' ' '\n' | ./plus
+15
+
+上記のようにパイプでコマンド連携をすれば横並びの数列も計算可能
+ただし、数字ごとに空白が必要(ex:1 2 3 4 5)
 
 
 ## 必要なソフトウェア
