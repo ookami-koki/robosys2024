@@ -9,6 +9,19 @@ ng () {
 
 res=0
 
+### 通常入力 ###
+./ks nomal > /dev/null
+out=$(cat mode)
+[ 1 = "${out}" ] || ng "$LINEO"
+
+./ks msgk > /dev/null
+out=$(cat mode)
+[ 2 = "${out}" ] || ng "$LINEO"
+
+./ks predi > /dev/null
+out=$(cat mode)
+[ 3 = "${out}" ] || ng "$LINEO"
+
 ### 出力なし ###
 out=$(./ks)
 [ "${out}" = '' ] && ng "$LINENO"
