@@ -22,7 +22,6 @@ out=$(cat mode)
 out=$(cat mode)
 [ 3 = "${out}" ] || ng "$LINEO"
 
-### 出力なし ###
 out=$(./ks)
 [ "${out}" = '' ] && ng "$LINENO"
 
