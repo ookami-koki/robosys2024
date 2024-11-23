@@ -1,0 +1,30 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Koki Iwai
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+def tonum(s):
+    try:
+        return int(s)
+    except:
+        return float(s)
+
+ans = []
+tool = 2
+co = 0
+
+for inptLine in sys.stdin:
+    inptNum = int(inptLine.strip())
+
+    if inptNum == 1:
+        ans.append(inptNum) 
+
+    while inptNum > 1:
+        while inptNum % tool == 0:
+            ans.append(tool)
+            inptNum = inptNum/tool
+        tool += 1
+        if inptNum < tool:
+            break
+print(ans)
