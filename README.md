@@ -3,6 +3,15 @@
 授業内で使用したコードの保存をおこなう。
 
 
+## 使用方法(共通)
+
+```
+$ git clone git@github.com:ookami-koki/robosys2024.git
+$ cd robosys2024
+```
+
+クローンしてダウンロード､cdでディレクトリを変更してから以下のコマンドを使用してください｡
+
 ## plusコマンド
 [![test](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml)
 
