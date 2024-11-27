@@ -35,6 +35,9 @@ out=$(echo 1.2 | ./prifact)
 out=$(echo 0 | ./prifact)
 [ "${out}"  = "[]" ] || ng "$LINENO"
 
+out=$(seq 5 | ./prifact)
+[ "${out}" = "[1, 2, 3, 4, 5]" ] || ng "$LINENO"
+
 [ "${res}" = 0 ] && echo OK
 exit "$res"
 
