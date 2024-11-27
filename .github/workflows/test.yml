@@ -12,7 +12,7 @@ jobs:
       run: bash -xv ./test.bash
     
     - name: ks command test
-      run: ./ksTest.bash
+      run: bash -xv ./ksTest.bash
 
     - name: prifact command test
-      run: ./priTest.bash
+      run: bash -xv ./priTest.bash
