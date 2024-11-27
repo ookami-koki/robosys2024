@@ -8,5 +8,11 @@ jobs:
         python-version: ["3.7", "3.8",  "3.9", "3.10", "3.11"]
     steps:
     - uses: actions/checkout@v3
-    - name: ALL test
-      run: bash -xv ./test.bash ./ksTest.bash ./priTest.bash
+    - name: plus command test
+      run: bash -xv ./test.bash
+    
+    - name: ks command test
+      run: ./ksTest.bash
+
+    - name: prifact command test
+      run: ./priTest.bash
