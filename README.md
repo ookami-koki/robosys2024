@@ -11,6 +11,12 @@ $ cd robosys2024
 ```
 
 クローンしてダウンロード､cdでディレクトリを変更してから以下のコマンドを使用してください｡
+また､各コマンドを実行する際に権限を付与する必要があるため､
+各コマンドを最初に使用するときは､以下のコマンドを使用し､権限を付与してください｡
+
+```
+$ chmod +x <コマンド名>
+```
 
 ## plusコマンド
 [![test](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml)
@@ -89,6 +95,7 @@ ksとうち間違えてもlsを実行してくれるモード。
 
 ```
 $ echo 12 | ./prifact
+[2, 2, 3]
 ```
 
 上記のようにechoコマンドと正の自然数を使用して，実行する｡
