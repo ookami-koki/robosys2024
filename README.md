@@ -6,7 +6,7 @@
 ## 使用方法(共通)
 
 ```
-$ git clone git@github.com:ookami-koki/robosys2024.git
+$ git clone https://github.com/ookami-koki/robosys2024.git
 $ cd robosys2024
 ```
 
@@ -109,7 +109,7 @@ $ seq 8 | ./prifact
 - Ubuntu 24.04LTS
 
 ## ライセンス事項
-- このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
+- このソフトウェアパッケージの一部は，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです.
     - (https://ryuichiueda.github.io/slides_marp/robosys2024/lesson3.html)
     - (https://ryuichiueda.github.io/slides_marp/robosys2024/lesson2.html)
