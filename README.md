@@ -82,6 +82,7 @@ ksとうち間違えてもlsを実行してくれるモード。
 ## prifactコマンド
 
 [![test](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/ookami-koki/robosys2024/actions/workflows/test.yml)
+
 入力された数字を素因数分解して､出力するコマンド｡
 
 ### 使用方法
