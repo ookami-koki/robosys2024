@@ -11,17 +11,17 @@ chMode = 0
 rand = random.randint(0, 4)
 
 if(len(sys.argv) > 1):
-    getMode = sys.argv[1]
-    if(getMode == 'nomal'):
-        chMode = 1
-    if(getMode == 'msgk'):
-        chMode = 2
-    if(getMode == 'predi'):
-        chMode = 3
+    getmode = sys.argv[1]
+    if(getmode == 'nomal'):
+        chmode = 1
+    if(getmode == 'msgk'):
+        chmode = 2
+    if(getmode == 'predi'):
+        chmode = 3
 
-if(chMode >= 1):
+if(chmode >= 1):
     with open('mode','w') as f:
-        f.write(str(chMode))
+        f.write(str(chmode))
 
 if(os.path.isfile('mode')):
     with open('mode', 'r') as f:

@@ -14,17 +14,17 @@ ans = []
 tool = 2
 co = 0
 
-for inptLine in sys.stdin:
-    inptNum = int(inptLine.strip())
+for inptline in sys.stdin:
+    inptnum = int(inptline.strip())
 
-    if inptNum == 1:
-        ans.append(inptNum) 
+    if inptnum == 1:
+        ans.append(inptnum) 
 
-    while inptNum > 1:
-        while inptNum % tool == 0:
+    while inptnum > 1:
+        while inptnum % tool == 0:
             ans.append(tool)
-            inptNum = inptNum/tool
+            inptnum = inptnum/tool
         tool += 1
-        if inptNum < tool:
+        if inptnum < tool:
             break
 print(ans)
