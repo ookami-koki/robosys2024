@@ -7,7 +7,7 @@ import sys
 import subprocess
 import os
 
-chMode = 0
+chmode = 0
 rand = random.randint(0, 4)
 
 if(len(sys.argv) > 1):
