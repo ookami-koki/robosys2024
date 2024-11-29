@@ -12,28 +12,32 @@ res=0
 ### 普通に入力 ###
 #### 素数じゃない ####
 out=$(echo 12 | ./prifact)
-[ "${out}" = "[2, 2, 3]" ] || ng "$LINENO"
+[ "${out}" = "2 2 3" ] || ng "$LINENO"
 
 #### 素数 ####
 out=$(echo 13 | ./prifact)
-[ "${out}" = "[13]" ] || ng "$LINENO"
+[ "${out}" = "13" ] || ng "$LINENO"
 
 
 ### 異常入力 ###
+### 文字の入力 ###
 out=$(echo あ | ./prifact)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
+### 空白入力 ###
 out=$(echo | ./prifact)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
+### 小数点以下の入力 ###
 out=$(echo 1.2 | ./prifact)
 [ "$?" = 1 ] || ng "$LINRNO"
 [ "${out}" = "" ] || ng "$LINENO"
 
+### 0の入力 ###
 out=$(echo 0 | ./prifact)
-[ "${out}"  = "[]" ] || ng "$LINENO"
+[ "${out}"  = "" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK
 exit "$res"

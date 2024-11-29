@@ -27,4 +27,5 @@ for inptline in sys.stdin:
         tool += 1
         if inptnum < tool:
             break
-print(ans)
+
+print(*ans)
